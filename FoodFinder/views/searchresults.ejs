@@ -1,0 +1,17 @@
+<%- include('partials/header') -%>
+
+<div class="container">
+    <h1>Here are some great places nearby:</h1>
+
+    <% data.forEach((element, index) => { %>
+    <div id="displayResult">
+        <a href="<%= element.url %>"><%= element.name %></a>
+        <img src="<%= valueConvertor[index] %>" alt="<%= element.rating %> stars" />
+    </div>
+    <% }) %>
+    <a href="/home">Search Again?</a>
+</div>
+
+
+
+<%- include('partials/footer') -%>

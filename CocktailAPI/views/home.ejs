@@ -1,0 +1,37 @@
+<%- include('partials/header') %>
+
+<h1>Hello, Cocktails</h1>
+
+<div class="container text-center">
+    <div class="row">
+        <div class="col-lg-4">
+            <img src="<%= drink.strDrinkThumb %>" alt="cocktail image">
+            <h4><%= drink.strDrink %></h4>
+            <form action="/home" method="get">
+                <button type="submit" class="btn btn-success">Need a drink?</button>
+            </form>
+        </div>
+
+        <div class="col-lg-8">
+            <ul>
+                <% ingredients.forEach((element, index) => { %>
+                    <li>
+                        <img src="https://www.thecocktaildb.com/images/ingredients/<%= element %>.png" alt="<%= element  %>">
+                        <p>
+                            <%= measures[index] %>
+                        </p>
+                    </li> 
+                <% }) %>
+            </ul>
+        </div>
+        </div>
+    <div class="row">
+        <div class="col" id="instructions">
+            <h3>Instructions: </h3>
+            <p><%= drink.strInstructions  %></p>
+        </div>
+    </div>  
+</div>
+
+
+<%- include('partials/footer') %>
