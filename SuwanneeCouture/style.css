@@ -1,0 +1,253 @@
+#navBarColor {
+    background-color: purple;
+    font-family: "Gloock", serif;
+}
+
+.navbar-brand{
+    color: white;
+    font-family: "Gloock", serif;
+    font-size: 53px;
+}
+
+.navbar-brand:hover {
+    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.navbar-nav a{
+    color: rgb(255, 255, 255);
+    font-family: "Gloock", serif;
+    font-size: 30px;
+}
+.navbar-nav a:hover {
+    color: rgba(0, 255, 157, 0.835);
+    font-family: "Gloock", serif;
+}
+
+.navbar-nav .nav-link.active{
+    color: rgba(8, 255, 173, 0.835);
+
+}
+
+#infoA{
+    margin-top: 50px;
+    border: 1px solid rgb(195, 0, 160);
+}
+
+#infoA h3{
+    color: blueviolet;
+}
+
+#mainPageInfo{
+    margin-top: 50px;
+    font-size: 20px;
+    display: none;
+    
+}
+
+
+#mainPageInfo h2{
+    color: rgb(1, 144, 103);
+    font-size: 30px;
+    font-family: "Gloock", serif;
+}
+
+#contactUS{
+    text-decoration: none;
+}
+
+@keyframes spin {
+0% {
+    transform: rotate(0);
+}
+100% {
+    transform: rotate(360deg);
+}
+}
+
+.fa-spin {
+    animation-name: spin;
+    animation-duration: 4s; /* Adjust this value to make the spin faster or slower */
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#embroideryImage{
+    border-radius: 50%;
+}
+
+#footer{
+    background-color: #04ffc0;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    font-family: "Gloock", serif;
+    color: purple;
+    padding-bottom: 50px;
+    
+}
+
+#footer p{
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+#orderForm{
+    background-color: #04ffc0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+    
+}
+
+#orderForm h2{
+    color: purple;
+    font-family: "Gloock", serif;
+    font-size: 30px;
+}
+
+#orderForm p{
+    line-height: 1.5;
+}
+
+#clothColor2, #hatColor2, #accessoryColor2{
+    width : 200px;
+}
+
+#designArea, #designThread{
+    width: 500px;
+    height: auto;
+    border: 1px solid black;
+    margin-top: 10px;
+}
+
+#carouselThread{
+    font-family: "Gloock", serif;
+    font-size: 20px;
+    color: rgb(111, 11, 111);
+} 
+
+.carousel-inner{
+    border: purple 5px solid;
+
+    
+}
+
+#otherInputAccessory{
+    display: none;
+}   
+
+#otherInputHat{
+    display: none;
+    
+}   
+
+
+#otherInputCloth{
+    display: none;
+    
+}   
+
+#otherInputAccessoryText, #otherInputHatText, #otherInputClothText{
+    width: 300px;
+    height: auto;
+}
+
+canvas {
+	cursor: crosshair;
+	display: none;
+    position: absolute;
+    z-index: 1;
+
+}
+
+#imageContainer{
+    margin: 0 auto;
+    width: auto;
+    height: 500px;
+    text-align: center;
+    margin-top: 10px;
+    font-family: "Gloock", serif;
+
+}
+#imageContainer h1{
+    color: purple;
+    font-size: 40px;
+}
+
+img{
+    width: auto;
+    height: 100%;
+    max-height: 500px;
+    max-width: 700px;
+    }
+
+#galleryBody{
+    background-color: rgb(110, 216, 255);
+}
+
+#previous{
+    background-color: rgb(163, 9, 163);
+    color: white;
+    border-radius: 10px;
+    border: 1px solid rgb(255, 242, 3);
+    width: 150px;
+    height: 50px;
+    font-size: 30px;
+}
+
+#next{
+    background-color: rgb(163, 9, 163);
+    color: white;
+    border-radius: 10px;
+    border: 1px solid rgb(255, 242, 3);
+    width: 100px;
+    height: 50px;
+    font-size: 30px;
+}
+
+#orderSubmitButton{
+    background-color: rgb(163, 9, 163);
+    color: white;
+    border-radius: 10px;
+    border: 1px solid rgb(255, 242, 3);
+    width: 100%;
+    height: 50px;
+    font-size: 30px;
+}
+
+strong{
+    color: rgb(255, 0, 0);
+}
+
+#contactHeader{
+    color: purple;
+    font-family: "Gloock", serif;
+    font-size: 53px;
+    margin-top: 10px;
+}
+
+#shipping{
+    width:300px;
+}
+
+#contactInfoPage{
+    font-size: 30px;
+    color: purple;
+}
+
+#contactInfoPage i{
+    font-size: 30px;
+    color: rgb(57, 235, 208);
+}
+
+#contactBox{
+    background-color: rgb(248, 255, 157);
+    padding : 30px;
+    margin-top: 50px;
+    border: rgb(237, 19, 193) 3px dotted;
+}

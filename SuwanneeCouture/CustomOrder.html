@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Custom Orders</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Gloock&family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet" text="text/css">
+    <script src="https://kit.fontawesome.com/01b4f07fb2.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg" id ="navBarColor">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="#">Suwannee Couture</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html" id="home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="About.html" id="about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Gallery.html" id="gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="CustomOrder.html" id="customOrder">Custom Order</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="FAQ.html" id="faq">Contact</a>
+            </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    <canvas id="canvas"></canvas>
+
+    <form id="orderForm">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+
+                    <h2>Order Here!</h2>
+                    <p>Please fill out the form below to place your order. If you don't see what you are looking for please reach out!
+                        <br>
+                        <strong>ALL FIELDS REQUIRED FOR SUBMISSION</strong>
+                    </p>
+
+                    <label for="name"><b>Name:</b></label>
+                    <input type="text" placeholder="Enter Full Name" name="name" required> <br> <br>
+
+                    <label for="email"><b>Email:</b></label> 
+                    <input type="text" placeholder="Enter Email" name="email" required> <br> <br>
+
+                    <label for="phone"><b>Phone Number:</b></label>
+                    <input type="text" placeholder="Enter Phone Number" name="phone" required><br> <br>
+
+                    <label for="address"><b>Address: </b></label>
+                    <input type="text" placeholder="Enter Street Address" name="address" required>
+
+                    <label for="city"><b>City: </b></label>
+                    <input type="text" placeholder="Enter City" name="city" required>
+
+                    <label for="state"><b>State: </b></label>
+                    <input type="text" placeholder="Enter State" name="state" required>
+
+                    <label for="zip"><b>Zip Code: </b></label>
+                    <input type="text" placeholder="Enter Zip Code" name="zip" required> <br> <br>
+
+                    <label for="order"><b>Clothing: </b></label>
+                    <select name="order" id="orderClothes">
+                            <option value="T-Shirt">T-Shirt</option>
+                            <option value="Long Sleeve">Long Sleeve</option>
+                            <option value="Hoodie">Hoodie</option>
+                            <option value="Sweatshirt">Sweatshirt</option>
+                            <option value="Sweatpants">Sweatpants</option>
+                            <option value="Shorts">Shorts</option>
+                            <option value="Robe">Robe</option>
+                            <option value="Socks">Socks</option>
+                            <option value="Other">Other</option>
+                            <option value="None">None</option>
+                    </select>
+            
+                    <label for="clothColor"><b>Clothing Color: </b></label>
+                    <input type="text" placeholder="Enter First Color Choice" name="clothColor1" required id="clothColor1">
+                    <input type="text" placeholder="Enter Second Color Choice" name="clothColor2" required id="clothColor2">
+
+                    <div id="otherInputCloth">
+                    <br>
+                    <label for="otherInputCloth">Please Specify:</label><br>
+                    <textarea name="otherInputCloth" id="otherInputClothText" placeholder="Enter Other Hat Style and Provide link to similar or wanted item"></textarea> 
+                    </div>
+
+                    <br> <br>
+                    <label for="order"><b>Hat: </b></label>
+                    <select name="order" id="orderHat">
+                        <option value="Dad Hat">Dad Hat</option>
+                        <option value="Snapback">Snapback</option>
+                        <option value="Trucker Hat">Trucker Hat</option>
+                        <option value="Baseball Hat">Baseball Hat</option>
+                        <option value="Bucket Hat">Bucket Hat</option>
+                        <option value="Visor">Visor</option>
+                        <option value="5-panel">5-Panel</option>
+                        <option value="Beanie">Beanie</option>
+                        <option value="Other">Other</option>
+                        <option value="None">None</option>
+                    </select>
+
+                    <label for="clothColor"><b>Hat Color: </b></label>
+                    <input type="text" placeholder="Enter First Color Choice" name="hatColor1" required id="hatColor1">
+                    <input type="text" placeholder="Enter Second Color Choice" name="hatColor2" required id="hatColor2">
+            
+                    <div id="otherInputHat">
+                    <br>
+                    <label for="otherInputHat">Please Specify:</label><br>
+                    <textarea name="otherInputHat" id="otherInputHatText" placeholder="Enter Other Hat Style and Provide link to similar or wanted item"></textarea> 
+                    </div>
+                
+
+                    <br> <br>
+                    <label for="order"><b>Accessories: </b></label>
+                    <select name="order" id="orderAccessory">
+                
+                        <option value="Backpack">Backpack</option>
+                        <option value="Duffel Bag">Duffel Bag</option> 
+                        <option value="Tie">Tie</option>
+                        <option value="Scarf">Scarf</option>
+                        <option value="Headband">Headband</option>
+                        <option value="Gloves">Gloves</option>
+                        <option value="Mask">Mask</option>
+                        <option value="Dog">Dog Bandana</option>
+                        <option value="Other">Other</option>
+                        <option value="None">None</option>
+                    </select>
+
+                    <label for="clothColor"><b>Color: </b></label>
+                    <input type="text" placeholder="Enter First Color Choice" name="accessoryColor1" id="accessoryColor1" required>
+                    <input type="text" placeholder="Enter Second Color Choice" name="accessoryColor2" id="accessoryColor2" required>
+
+                    <div id="otherInputAccessory">
+                    <br>
+                    <label for="otherAccessory">Please Specify:</label><br>
+                    <textarea name="otherAccessory" id="otherInputAccessoryText" placeholder="Enter Other Accessory and Provide link to similar or wanted item"></textarea> 
+                    </div>
+                    <br> <br>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="row">
+                <div class="col-lg-7">
+                    <label for="order"><b>Design: </b></label> <br>
+                    <textarea name="design" id="designThread" placeholder="Enter Design Idea Here"></textarea>
+                    
+                    <br> <br>
+                    
+                    <label for="order"><b>Total Number of Patches:</b></label>  
+                    <input type="number" name="patchNumber" id="patchNumber" min="1" max="100" required> <br> <br>
+                    
+                    <br> 
+
+                    <label for="order"><b>Thread: </b></label> 
+                    <select name="thread" id="threadType">
+                        <option value="Polyester">Polyester</option>
+                        <option value="Variegated">Variegated (Multicolor)</option>
+                        <option value="Metallic">Metallic ($1 extra)</option>
+                        <option value="Glow in the Dark">Glow in the Dark ($1 extra)</option>
+                        <option value="Mix">Mixture (detail in textbox below)</option>
+                    </select>
+                    
+                    <br> 
+                    
+                    <textarea name="design" id="designThread" placeholder="List Your Favorite Colors. Include any specific thread colors or types of thread you want in your design(s)"></textarea>
+                    
+                    <br> <br>
+                    
+                    <label for="order"><b>Shipping Preference: </b></label> <br>
+                    <select name="shipping" id="shipping">
+                        <option value="Standard">Standard (3-5 Business Days) $5 </option>
+                        <option value="Priority">Priority (2-3 Business Days) $15 </option>
+                        <option value="Express">Express (1-2 Business Days) $50 </option>
+                    </select>
+                    <p>***AFTER ORDER CONFIRMED AND COMPLETE***</p>
+
+                </div>
+
+                <div class="col-lg-5">
+                    <div id="carouselThread" class="carousel slide">
+                        <h4>Thread Color Examples</h4>
+                        <div class="carousel-inner">
+                        <div class="carousel-item">
+                            <img src="https://m.media-amazon.com/images/I/91aTkaEAvYL.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item active">
+                            <img src="https://m.media-amazon.com/images/I/91aHkbjtUrL.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="http://cdn.shopify.com/s/files/1/0456/1413/7500/products/Newbrothread20ColorsMetallicEmbroiderythreadkit-1.jpg?v=1608606921" class="d-block w-100" alt="...">
+                        </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselThread" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselThread" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+            
+                </div>
+            </div>
+            
+            <br><br> 
+            
+            <div class="row"> 
+                <div class="col-lg-12">
+                    <h6>Please Note</h6>
+                    <p>
+                        The price of your order will be determined by the complexity of the design(s).<br>
+                        Once you submit your order, we will contact you with a price quote and a time frame for completion.<br>                
+                
+                        If you have any questions or want to revise your order after submission, please contact us at SuwanneeCouture@gmail.com
+
+                    </p>
+                    <br> 
+                    <button type="submit" value="Submit" id="orderSubmitButton"> Submit Order! </button>
+            </div>
+        </div>
+
+    </form>
+
+
+    <br> <br> 
+    <footer id="footer"> 
+        <p>
+        Suwannee Couture
+        <a href="https://www.instagram.com/suwanneecouture/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="mailto:suwanneecouture@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        </p>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+

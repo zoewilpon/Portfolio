@@ -1,0 +1,13 @@
+<%- include('partials/header') -%>
+<div class="container">
+    <h1> Now Playing at a Theater Near You: </h1>
+
+    <% data.forEach(element => { %>
+            <% let path=`https://image.tmdb.org/t/p/w300/${element.poster_path}` %>
+            <img src='<%= path %>' alt="<%= element.title %>" />
+            <h2><%= element.title %> </h2>
+            <p><%= element.overview %> </p>
+    <% }); %>
+</div>
+
+<%- include('partials/footer') -%>
