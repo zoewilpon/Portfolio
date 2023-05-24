@@ -1,0 +1,116 @@
+body, html { margin: 0; 
+    max-height: 0px; 
+    font-family: 'Oswald', sans-serif;
+    background-color: #eaf0f2;
+    
+    }
+
+ul {list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #263238;
+    height: 75px; }
+
+li {display: inline;}
+
+.fa-comment {font-size: 42px;
+            line-height: 35px;}
+
+.logo{padding:15px 35px;    
+    line-height: 35px;
+    font-size: 42px;
+    float: left;}
+
+a {text-decoration: none;
+    color: white;    
+    font-size: 25px ;
+    font-weight: bold;
+    padding: 15px 20px;}
+
+.dropbtn {background-color:#263238;
+        color: white;
+        padding:20px 15px;
+        font-size: 25px;
+        border: none;
+        cursor:pointer
+                    }
+        
+.dropdown {position: relative;
+        display: inline-block;
+        max-height: 0px;}
+
+.dropdown-content {background-color:#263238;
+                    position: absolute;
+                    display: none;
+                    line-height: 45px;
+                    min-width: 170px;
+                    box-shadow:0px 8px 16px 0px #546E7A;
+                    }
+
+.dropdown-content a {color: white;
+                    height: 45px;
+                    padding:15px 20px;
+                    text-decoration: none;
+                    display: block;
+                    }
+
+.dropdown-content a:hover {background-color:#CFD8DC;
+                            transition: 0.6s;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn{background-color:#546E7A;}
+
+img, h1 {margin-left: 35px ; }
+
+h1 {margin-top: 100px;}
+
+img{
+    width: 100%;
+    height: 100%;
+    max-height: 500px;
+    max-width: 500px;
+    }
+
+
+p {font-size: 10px; color: #B0BEC5;}
+
+.footer{background-color:#263238;
+        padding: 5px;
+        margin-top: 10px;
+        text-align: center;
+        justify-content: center;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        left: 0;
+    }
+
+h2{color: #B0BEC5;
+    font-size:20px;}
+
+.button{background-color: #263238;
+        color: white;
+        border: none;
+        text-align: center;
+        font-size: 15px;
+        text-decoration: none;
+        display: inline-block ;
+        font-family: 'Oswald', sans-serif}
+
+.button:hover {background-color: #CFD8DC;
+                color: white;
+                }
+
+#imagebuttons{
+    margin-left: 35px;
+}
+
+
+#navbar{
+    background-color:#263238;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: top 0.3s;
+}
