@@ -23,6 +23,8 @@ dist-ssr
 *.sln
 *.sw?
 
+
+config/keys.js
 config/dev.js
-config/key.js
 config/prod.js
+```
